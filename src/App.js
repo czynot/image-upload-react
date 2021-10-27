@@ -70,7 +70,12 @@ const App = () => {
       case 'uploading':
         return <h2>Uploading the image...</h2>
       case 'uploaded':
-        return <img src={url} alt='uploaded'></img>
+        return (
+          <>
+            <a href={url}>link to image</a>
+            <img src={url} alt='uploaded'></img>
+          </>
+        )
       case'uploadError':
         return (
           <>
